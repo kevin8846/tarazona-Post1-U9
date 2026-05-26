@@ -1,0 +1,28 @@
+# PostContenido 1 - Unidad 9
+KEVIN ALEJANDRO TARAZONA MARTINEZ 1152297
+## Arquitectura de Computadores
+
+### Objetivo
+
+Implementar programas en lenguaje ensamblador x86 utilizando NASM y DOSBox para acceder directamente a puertos de entrada/salida mediante instrucciones IN y OUT, aplicando técnicas de polling y comunicación con dispositivos.
+
+---
+
+# Prerrequisitos
+
+- DOSBox 0.74 o superior
+- NASM 2.x
+- Carpeta de trabajo montada en DOSBox
+
+---
+
+# Programas desarrollados
+
+## 1. TECL.ASM
+
+Programa que lee el estado del controlador de teclado 8042 utilizando los puertos 60h y 64h.
+
+### Compilación
+
+```bash
+nasm -f bin TECL.ASM -o TECL.COM
